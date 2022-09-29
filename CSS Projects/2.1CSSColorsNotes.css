@@ -1,0 +1,34 @@
+/* 
+#### CSS Colors
+
+https://www.w3schools.com/css/css_colors.asp
+https://www.w3schools.com/colors/colors_names.asp
+https://www.w3schools.com/colors/colors_picker.asp
+
+Base (primary) colors: Red(255-0-0), Green(0-255-0) and Blue(0-0-255)
+Intermediate (secondary) colors: By mixing primary colors. (Yellow (R-G), Cyan(G-B), Magenta(B-R)), white (combination of R-G-B)
+
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+All modern browsers support the following 140 color names.
+
+decimal
+ 0,1,2,3,4,5......,10,11...,99
+
+ hexadecimal
+ 0,1,2.......,9,A,B,C,D,E,F....,FF
+
+ 0000FF---Blue
+
+#7FFFD4---Aquamarine 
+
+Decimal: (0,1,2..............9..........99)
+Hexadecimal: (0,1,2..........9,A,B,C,D,E,F...........FF)
+
+Red: #FF0000
+Green: #00FF00
+Blue: #0000FF
+White: #FFFFFF
+
+Hexadecimal: #FF0000 (Red), #FFFFFF-White, #000000-Black
+RGB model: rgb(255,0,0) (Red), rgb(255,255,255)-White, rgb(0,0,0)-Black
+HSL model: hsl(0,100%,50%), hsl(360,100%,50%)-(Red), hsl(0, 0%, 0%)-(Black), hsl(0, 100%, 100%)-(White) */
