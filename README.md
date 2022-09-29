@@ -1162,13 +1162,14 @@ The CSS Flexbox Items Properties
 --------------------------------
 The following table lists all the CSS Flexbox Items properties:
 
+```
 -- align-self:	Specifies the alignment for a flex item (overrides the flex container's align-items property)
 -- flex:	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
 -- flex-basis:	Specifies the initial length of a flex item
 -- flex-grow:	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
 -- flex-shrink:	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
 -- order:	Specifies the order of the flex items inside the same container
-
+```
 ##### CSS Flex Responsive
 
 Responsive Flexbox
