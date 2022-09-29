@@ -70,13 +70,17 @@ https://github.com/OakAcademy/HTML-For-Everyone-Real-World-Coding-in-HTML
 
 #### HTML Basic Tags
 
-HTML element: (<openingTag>Content<closingTag>)
+HTML element: 
+
+```
+(<openingTag>Content<closingTag>)
 <tagName>content</tagName>
+```
 
-Examples:
-
+Example:s:
+```
 <html> </html>, <head>, <title>, <body>, <h1> to <h6>, <br>, <p>, <strong> <b>, <em> <i>, <u>
-
+```
 HTML Headings:
 -------------
 ```<h1>Project</h1>```
@@ -97,11 +101,11 @@ HTML Lists:
 #### CSS Basics
 
 There are 3 types of CSS so there are 3 ways to include CSS in the document –
-
+```
 -- Inline CSS
 -- Internal or Embedded CSS
 -- External CSS
-
+```
 Out of these, the best way to include CSS is through External CSS but depending upon the requirement, you can also use Inline CSS and Internal CSS
 
 Inline CSS
@@ -109,14 +113,15 @@ Inline CSS
 
 Syntax of Inline CSS:
 
-```<elementName style=attr1:val1;attr2:val2;…..;attr-n:val-n>Details</elementName>
 ```
+<elementName style=attr1:val1; attr2:val2;…..; attr-n:val-n>Details</elementName>
 
-``` <tag style={property: value; }> Contents </tag>```
+<tag style={property: value; }> Contents </tag>
 
-``` <h1 style={color: red;}>This is Heading</h1> ```
+<h1 style={color: red;}>This is Heading</h1> 
 
-``` <p style="background-color:SlateBlue;padding:10px">This paragraph uses Inline CSS</p> ```
+<p style="background-color:SlateBlue;padding:10px">This paragraph uses Inline CSS</p>
+```
 
 
 Internal or Embedded CSS
@@ -138,15 +143,18 @@ Internal or Embedded CSS
     attr-nn:val-nn
 }
 
+</style>
 ```
+
+```
+
 .h4class {
   background-color:#ffa500;
 }
 .square {
   list-style-type: square;
 } 
-```
-</style>
+
 ```
 
 External CSS
@@ -166,7 +174,7 @@ Selector {
 }
 ```
 
-Example:
+Example::
 
 STEP 1- Create an External CSS file with .CSS extention. For example - Suppose, we have an external CSS file with any valid name like style.css whose content is as below -
 
@@ -226,12 +234,13 @@ https://www.w3schools.com/css/css_colors.asp
 https://www.w3schools.com/colors/colors_names.asp
 https://www.w3schools.com/colors/colors_picker.asp
 
+```
 Base (primary) colors: Red(255-0-0), Green(0-255-0) and Blue(0-0-255)
 Intermediate (secondary) colors: By mixing primary colors. (Yellow (R-G), Cyan(G-B), Magenta(B-R)), white (combination of R-G-B)
-
+```
 Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
 All modern browsers support the following 140 color names.
-
+```
 Decimal: (0,1,2..............9..........99)
 Hexadecimal: (0,1,2..........9,A,B,C,D,E,F...........FF)
 
@@ -243,7 +252,7 @@ White: #FFFFFF
 Hexadecimal: #FF0000 (Red), #FFFFFF-White, #000000-Black
 RGB model: rgb(255,0,0) (Red), rgb(255,255,255)-White, rgb(0,0,0)-Black
 HSL model: hsl(0,100%,50%), hsl(360,100%,50%)-(Red), hsl(0, 0%, 0%)-(Black), hsl(0, 100%, 100%)-(White)
-
+```
 #### CSS Background and Border
 
 ```
@@ -302,12 +311,12 @@ li{
 All CSS Simple Selectors
 ------------------------
 ```
-Selector	         Example                Example description
+Selector	         Example:                Example: description
 ------------------------------------------------------------------
-#id	               #firstname	     Selects the element with id="firstname"
+#id	                #firstname	     Selects the element with id="firstname"
 .class	            .intro	         Selects all elements with class="intro"
-element.class	   p.intro	         Selects only <p> elements with class="intro"
-*	                 *	             Selects all elements
+element.class	      p.intro	         Selects only <p> elements with class="intro"
+*	                    *	             Selects all elements
 element	              p	             Selects all <p> elements
 element,element,..	div, p	         Selects all <div> elements and all <p> elements
 element element     div p            Select and style every <p> element that is inside <div> elements:
@@ -358,12 +367,13 @@ The CSS box model is essentially a box that wraps around every HTML element. It 
 
 Explanation of the different parts:
 
+```
 Content - The content of the box, where text and images appear
 Padding - Clears an area around the content. The padding is transparent
 Border - A border that goes around the padding and content
 Margin - Clears an area outside the border. The margin is transparent
-
-Example
+```
+Example:
 Demonstration of the box model:
 ```
 div {
@@ -378,7 +388,7 @@ In order to set the width and height of an element correctly in all browsers, yo
 
 Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
 
-Example
+Example:
 This <div> element will have a total width of 350px: 
 
 ```
@@ -589,10 +599,10 @@ The CSS box-sizing property allows us to include the padding and border in an el
 Without the CSS box-sizing Property
 ------------------------------------
 By default, the width and height of an element is calculated like this:
-
+```
 width + padding + border = actual width of an element
 height + padding + border = actual height of an element
-
+```
 With the CSS box-sizing Property
 --------------------------------
 The box-sizing property allows us to include the padding and border in an element's total width and height.
@@ -725,14 +735,14 @@ The flex container becomes flexible by setting the display property to flex:
 ```
 
 The flex container properties are:
-
+```
 flex-direction
 flex-wrap
 flex-flow
 justify-content
 align-items
 align-content
-
+```
 The flex-direction Property
 ----------------------------
 The flex-direction property defines in which direction the container wants to stack the flex items.
@@ -797,7 +807,7 @@ The flex-flow Property
 -----------------------
 The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
 
-Example
+Example:
 ```
 .flex-container {
   display: flex;
@@ -808,7 +818,7 @@ The justify-content Property
 ------------------------------
 The justify-content property is used to align the flex items:
 
-Example
+Example:
 The center value aligns the flex items at the center of the container:
 
 ```
@@ -818,7 +828,7 @@ The center value aligns the flex items at the center of the container:
 }
 ```
 
-Example
+Example:
 The flex-start value aligns the flex items at the beginning of the container (this is default):
 
 ```
@@ -835,7 +845,7 @@ The flex-end value aligns the flex items at the end of the container:
   justify-content: flex-end;
 }
 ```
-Example
+Example:
 The space-around value displays the flex items with space before, between, and after the lines:
 ```
 .flex-container {
@@ -844,7 +854,7 @@ The space-around value displays the flex items with space before, between, and a
 }
 ```
 
-Example
+Example:
 The space-between value displays the flex items with space between the lines:
 ```
 .flex-container {
@@ -859,7 +869,7 @@ The align-items property is used to align the flex items
 
 In these examples we use a 200 pixels high container, to better demonstrate the align-items property.
 
-Example
+Example:
 The center value aligns the flex items in the middle of the container:
 ```
 .flex-container {
@@ -869,7 +879,7 @@ The center value aligns the flex items in the middle of the container:
 }
 ```
 
-Example
+Example:
 The flex-start value aligns the flex items at the top of the container:
 ```
 .flex-container {
@@ -878,7 +888,7 @@ The flex-start value aligns the flex items at the top of the container:
   align-items: flex-start;
 }
 ```
-Example
+Example:
 The flex-end value aligns the flex items at the bottom of the container:
 ```
 .flex-container {
@@ -887,7 +897,7 @@ The flex-end value aligns the flex items at the bottom of the container:
   align-items: flex-end;
 }
 ```
-Example
+Example:
 The stretch value stretches the flex items to fill the container (this is default):
 ```
 .flex-container {
@@ -896,7 +906,7 @@ The stretch value stretches the flex items to fill the container (this is defaul
   align-items: stretch;
 }
 ```
-Example
+Example:
 The baseline value aligns the flex items such as their baselines aligns:
 ```
 .flex-container {
@@ -913,7 +923,7 @@ The align-content property is used to align the flex lines.
 
 In these examples we use a 600 pixels high container, with the flex-wrap property set to wrap, to better demonstrate the align-content property.
 
-Example
+Example:
 The space-between value displays the flex lines with equal space between them:
 ```
 .flex-container {
@@ -932,7 +942,7 @@ The space-around value displays the flex lines with space before, between, and a
   align-content: space-around;
 }
 ```
-Example
+Example:
 The stretch value stretches the flex lines to take up the remaining space (this is default):
 ```
 .flex-container {
@@ -943,7 +953,7 @@ The stretch value stretches the flex lines to take up the remaining space (this 
 }
 ```
 
-Example
+Example:
 The center value displays display the flex lines in the middle of the container:
 ```
 .flex-container {
@@ -954,7 +964,7 @@ The center value displays display the flex lines in the middle of the container:
 }
 ```
 
-Example
+Example:
 The flex-start value displays the flex lines at the start of the container:
 ```
 .flex-container {
@@ -965,7 +975,7 @@ The flex-start value displays the flex lines at the start of the container:
 }
 ```
 
-Example
+Example:
 The flex-end value displays the flex lines at the end of the container: 
 ```
 .flex-container {
@@ -982,7 +992,7 @@ In the following example we will solve a very common style problem: perfect cent
 
 SOLUTION: Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
 
-Example
+Example:
 ```
 .flex-container {
   display: flex;
@@ -1021,7 +1031,7 @@ The direct child elements of a flex container automatically becomes flexible (fl
 
 The element above represents four blue flex items inside a grey flex container.
 
-Example
+Example:
 ```
 <div class="flex-container">
   <div>1</div>
@@ -1031,14 +1041,14 @@ Example
 </div>
 ```
 The flex item properties are:
-
+```
 -- order
 -- flex-grow
 -- flex-shrink
 -- flex-basis
 -- flex
 -- align-self
-
+```
 The order Property
 ------------------
 The order property specifies the order of the flex items.
@@ -1047,7 +1057,7 @@ The first flex item in the code does not have to appear as the first item in the
 
 The order value must be a number, default value is 0.
 
-Example
+Example:
 The order property can change the order of the flex items:
 
 ```
@@ -1064,7 +1074,7 @@ The flex-grow property specifies how much a flex item will grow relative to the 
 
 The value must be a number, default value is 0.
 
-Example
+Example:
 Make the third flex item grow eight times faster than the other flex items:
 ```
 <div class="flex-container">
@@ -1079,7 +1089,7 @@ The flex-shrink property specifies how much a flex item will shrink relative to 
 
 The value must be a number, default value is 1.
 
-Example
+Example:
 Do not let the third flex item shrink as much as the other flex items:
 
 ```
@@ -1102,7 +1112,7 @@ The flex-basis Property
 ------------------------
 The flex-basis property specifies the initial length of a flex item.
 
-Example
+Example:
 Set the initial length of the third flex item to 200 pixels:
 ```
 <div class="flex-container">
@@ -1117,7 +1127,7 @@ The flex Property
 ------------------
 The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
 
-Example
+Example:
 Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:
 ```
 <div class="flex-container">
@@ -1136,7 +1146,7 @@ The align-self property overrides the default alignment set by the container's a
 
 In these examples we use a 200 pixels high container, to better demonstrate the align-self property:
 
-Example
+Example:
 Align the third flex item in the middle of the container:
 ```
 <div class="flex-container">
@@ -1147,7 +1157,7 @@ Align the third flex item in the middle of the container:
 </div>
 ```
 
-Example
+Example:
 Align the second flex item at the top of the container, and the third flex item at the bottom of the container:
 ```
 <div class="flex-container">
@@ -1194,7 +1204,7 @@ For example, if you want to create a two-column layout for most screen sizes, an
 
 Another way is to change the percentage of the flex property of the flex items to create different layouts for different screen sizes. Note that we also have to include flex-wrap: wrap; on the flex container for this example to work
 
-Example
+Example:
 ```
 .flex-container {
   display: flex;
